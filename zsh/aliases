@@ -46,11 +46,5 @@ rpi() {
 }
 alias rpb="Rscript -e 'devtools::build()'"
 alias rpc="Rscript -e 'devtools::check(document = FALSE)'"
-nvimr() {
-  Rscript -e 'renv::settings$ignored.packages("nvimcom")'
-  Rscript -e 'install.packages("devtools")'
-  Rscript -e 'devtools::install("~/.config/nvim/plugged/Nvim-R/R/nvimcom")'
-  Rscript -e 'install.packages("languageserver")'
-}
 
 alias brew='arch -arm64 brew'
